@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --ligth-color : #BCEAFE;
+    --ligth-color-v2 : #0a7cad;
+    --blue-clr :#4400ff;
+    --blue-clr-v2 :#26125f;
+    --sunflowe-clr :#E8DE2A;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+    box-sizing: border-box;
+    /* font-family: 'Unbounded', cursive; */
+}
+body{
+    background-image: linear-gradient(var(--ligth-color),var(--ligth-color-v2));
+    background-color: var(--ligth-color)
+}
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;   
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+.card{
+    background-color: rgb(68, 0, 255);
+    background-image: linear-gradient(var(--blue-clr),var(--blue-clr-v2));
+    height: 20rem;
+    width: 20rem;
+    border-radius: 1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.main-heading{
+    position: absolute;
+    top: .5em;
+    color: aqua;
+    font-size: 2rem;
+
+}
+.word{
+    font-size: 1.5rem;
+    color: var(--sunflowe-clr);
+    position: absolute;
+    top: 3em;
+}
+.input-word > *{
+    position: absolute;
+    top: 15rem;
+    left: 3.8rem;
+    background-color: var(--ligth-color);
+    outline: none;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 10px 25px;
+}
+.btns{
+    position: absolute;
+    top: 13rem;
+}
+.btns > *{
+    background-color: var(--ligth-color);
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    margin-inline: 0.1rem;
+    border-radius: 0.3rem
+}
+.content{
+    position: absolute;
+    left: 2em;
+    top: 11em;
+}
+.content > *{
+    color: var(--ligth-color);
+    display: inline;
+}
+.timeleft{
+    font-size: .7rem;
+    /* color: var(--ligth-color-v2); */
+}
+.content-score{
+    font-size: 1.2rem;
+}
+
+.score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 17.5rem;
+    color: var(--sunflowe-clr);
+}

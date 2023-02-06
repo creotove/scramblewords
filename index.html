@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Word Scramble</title>
+</head>
+
+<body onload="jumblingWord()">
+    <div class="container" id="container">
+        <div class="card" id="card">
+            <div class="main-heading">
+                Word Scramble
+            </div>
+            <div class="word" id="wordScramble"></div>
+            <div class="content" id="content">
+                <div>Time left :</div>
+
+                <div class="timeleft" id="timeleft">On start game timer starts :))</div>
+            </div>
+            <div class="input-word">
+                <input type="text" id="userWord" placeholder="Enter The word " >
+            </div>
+            <!-- <div class="startbtn">
+                <button class="changeword">Start Game</button>
+            </div> -->
+            
+            <div class="btns" id="btns">
+                <button class="changeword" id="changeword">Start Game</button>
+                <button class="checkword" id="checkword">Check Word</button>
+            </div>
+            <div class="score">
+                <div class="content-score">Score</div>
+                <div class="timeleft" id="score"></div>
+
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script defer src="index.js"></script>
+
+</html>
